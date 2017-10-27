@@ -1,0 +1,631 @@
+
+/* We've defined styles for each class and div within the html files for the site */
+
+/* Styling for site structure */
+html{
+	box-sizing:border-box;
+	overflow-x:hidden;
+}
+
+/* Styling for all divs/containers */
+*{
+	box-sizing:inherit;
+}
+
+/* General styling for elements in the body */
+body{
+	margin:0;
+	font-family: "Montserrat", sans-serif;
+	color:black;
+}
+
+/* Common styling for h1 - h6 text */
+h1,h2,h3,h4,h5,h6 {
+	font-weight:400;
+	margin:10px 0;
+    letter-spacing: 4px;
+}
+
+/* Unique styling for h1 - h6 text */
+h1{
+	font-size:36px;
+	font-weight: 800;
+	font-family: "Roboto Slab", sans-serif;
+	letter-spacing: 2px;
+	color:white;
+	text-shadow: 4px 4px #D76976;
+}
+
+h2{
+	font-size:30px
+	font-family: "Roboto Slab", sans-serif;
+	font-weight: 800;
+}
+
+h3{
+	position: relative;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    line-height: 2.8em;
+    margin-top: -2.0em;
+    top: 1.0em;
+    font-size: 0.80em;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    opacity: 0.75;
+    text-align: center;
+}
+
+h4{
+	font-size:18px;
+	text-decoration: underline;
+	text-decoration-color: #D76976;
+	transition: background-color .3s;
+}
+
+h4:hover {
+  background-color: #D76976;
+}
+
+h5{
+	font-size:18px
+}
+
+h6{
+	font-size:12px;
+}
+
+/* Styling for cart counter */
+#cart-container {
+  float: right;
+  width: 210px;
+  position: relative;
+}
+
+#itemCount {
+  position: absolute;
+  display: none;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: grey;
+  color: white;
+  text-align: center;
+}
+
+/* Styling for links */
+a{
+	background-color:transparent;
+	color:inherit;
+	text-decoration: none;
+}
+
+/* Common styling for the header and footer. */
+footer,header{
+	display:block;
+}
+
+/* Light grey settings */
+.light-grey,.hover-light-grey:hover,.hover-light-gray:hover{
+	color:#000;
+	background-color:#f1f1f1;
+}
+
+/*A lot of CTA button animation*/
+html {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,*:before,*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+
+b {
+  position: relative;
+  display: block;
+  font-family: helvetica neue, helvetica, sans-serif;
+  line-height: 1.15em;
+  margin-top: -1.15em;
+  top: 2.3em;
+  font-size: 0.67em;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  opacity: 0.75;
+  text-align: center;
+}
+
+b span {
+  font-size: 0.785em;
+  font-weight: 400;
+  opacity: 0.4;
+}
+
+#intro {
+  width: 430px;
+  margin: 10px auto 0;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin-top: 20px;
+}
+
+.cta-button .cta-bottom {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    width: 100%;
+    height: 100%;
+    background-color: #D76976;
+    border-radius: 2px;
+    display: block;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+.cta-button .cta-top {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 14px 30px 14px 30px;
+    border: 2px solid #000;
+    border-radius: 2px;
+}
+
+.cta-button-dark .cta-top {
+    border: 2px solid #fff;
+    border-radius: 0px;
+}
+
+.cta-button .cta-top .cta-label {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 12px;
+    line-height: 110%;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+.cta-button-dark .cta-top .cta-label {
+    color: red;
+}
+
+.cta-button:hover .cta-bottom {
+    left: 0;
+    top: 0;
+    background-color: #fff;
+}
+
+.cta-button:hover .cta-top .cta-label {
+    color: #D76976;
+}
+
+.cta-button-border {
+    position: absolute;
+    background-color: #D76976;
+    border-radius: 4px;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+.cta-button:hover .cta-top .cta-button-border-left,.cta-button:hover .cta-top .cta-button-border-right {
+    height: calc(100% + 2px);
+}
+
+.cta-button:hover .cta-top .cta-button-border-top,.cta-button:hover .cta-top .cta-button-border-bottom {
+    width: calc(100% + 2px);
+}
+
+.cta-button-border-left {
+    left: -2px;
+    bottom: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.cta-button-border-top {
+    left: -2px;
+    top: -2px;
+    width: 0;
+    height: 2px;
+}
+
+.cta-button-border-right {
+    right: -2px;
+    top: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.cta-button-border-bottom {
+    right: -2px;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+}
+/* End CTA button animation */
+
+.button1 {
+  padding: 10px 24px;
+  font-size: 16px;
+  background-color: #D76976;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 10px;
+  line-height: 110%;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 1px solid 000;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button1:hover {
+    background-color: #954852; 
+    color: white;
+}
+
+
+/* Styling for larger body font */
+.large-font{
+	font-size:18px;
+}
+
+/* Styling for semi-transparent white background */
+.white-background{
+	color:#000;
+	opacity: 0.70;
+	background-color:#fff;
+}
+
+/* Styling for image in top portion of page */
+.hero-image{
+	max-width:100%;
+	min-width:500px;
+	height:auto;
+}
+
+/* Left display style */
+.display-left{
+	position:absolute;
+	padding-left: 40px;
+	top:50%;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(-0%,-50%);
+}
+
+.display-upper-left{
+	position:absolute;
+	padding-left: 40px;
+	top:40%;
+	transform:translate(0%,-30%);
+	-ms-transform:translate(-0%,-30%);
+}
+
+/* Margin top for body application */
+.body-margin: {
+	margin-top: 200px;
+}
+
+/* Styling for images in lower parts of the page */
+.body-image{
+	max-width:100%;
+	height:auto;
+	border-radius: 2px;
+	padding-left: 6px;
+	padding-top: 6px;
+}
+
+/* Styling for navigation bar */
+.navbar{
+	width:100%;
+	letter-spacing:2px;
+	overflow:hidden;
+	position:static;
+	float:left;
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+/* Styling for the center and nav elements */
+.center .navbar{
+	display:inline-block;
+	width:auto;
+}
+
+/* Common styling for nav bar and the elements that go inside */
+.navbar .navbar-item{
+	padding:8px 16px;
+	float:left;
+	width:auto;
+	border:none;
+	outline:none;
+	display:block;
+}
+
+/* Styling for navbar and buttons */
+.navbar .button{
+	white-space:normal;
+}
+
+/* Styling for the navbar items */
+.navbar-item{
+	width:100%;
+	display:block;
+	padding:8px 16px;
+	text-align:left;
+	border:none;
+	outline:none;
+	white-space:normal;
+	float:none;
+}
+
+/* Sets the wrapper width and margins */
+.wrapper{
+	max-width:1100px;
+	margin: 0 auto;
+}
+
+/* Media query, to figure out what to display in preparation for responsive design */
+@media (max-width:600px){
+	.modal-content{
+		margin:0 10px;
+		width:auto;
+		}
+	.modal{
+		padding-top:30px;
+	}
+	.hide-small{
+		display:none;
+	}
+	.mobile {
+		width:100%}
+}
+
+/* Column styling */
+.col{
+	padding:10 10px;
+}
+
+/* Styling for half page width columns */
+.col.m6,.half{
+	width:49.99999%;
+	float:left;
+}
+
+/* Give container div ".grid" class to set a max-width for the grid */
+.grid {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Use ".col-3" class for 3 columns max
+Use ".col-4" class for 4 columns max */
+.col-3,
+.col-4 {
+  width: 90%;
+  margin: 2em auto;
+/*   "border-box" allows the grid to work when divs have borders */
+  box-sizing: border-box;
+}
+
+@media (min-width: 480px) {
+  .col-3,
+  .col-4 {
+    width: 46%;
+    float: left;
+    margin: 1%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-3,
+  .col-4 {
+    width: 30%;
+    margin: 1.65%;
+  }
+}
+
+/* Not needed for 3 column max grid */
+@media (min-width: 992px) {
+  .col-4 {
+    width: 23%;
+    margin: 1%;
+  }
+}
+
+/* Syling for gallery tiles. */
+.bun-card {
+  background-color: #fff;
+  height: 240px;
+  width: 180px;
+  border: 2px solid #777;
+}
+
+/* Sets the display to table for row padding */
+.special-row:after,.special-row:before,.spoecial-row-padding:after,.special-row-padding:before{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Button styling */
+.button {
+	width:100%;
+	padding:8px 16px;
+	border:none;
+	display:inline-block;
+	outline:0;
+	vertical-align:middle;
+	overflow:hidden;
+	color:inherit;
+	background-color:inherit;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap;
+	border-radius: 2px;
+	transition: background-color .3s;
+}
+
+/* Button hover style */
+.button:hover{
+	color:#F3F3F3;
+	background-color:#D76976;
+}
+
+.add-to-cart-button {
+	width:100%;
+	text-align:center;
+	padding:10px 16px;
+	border-radius: 2px;
+	vertical-align:middle;
+	overflow:hidden;
+	color:inherit;
+	background-color:000;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+/* Top and bottom page styles */
+.top-page,.bottom-page{
+	position:fixed;
+	width:100%;
+	z-index:1
+}
+
+/* Sets placement for top and bottom of page */
+.top-page{
+	top:0
+}
+		
+.bottom-page{
+	bottom:0
+}
+
+/* Exception center alignment. */
+.center{
+	text-align:center;
+}
+
+/* Styling for different paddings */
+.small-padding{
+	padding:4px 8px;
+}
+
+.medium-padding{
+	padding:8px 40px;
+	}
+
+.big-padding{
+	padding:12px 24px;
+}
+
+.special-row-padding{
+	padding:0.01em 16px;
+}
+
+/* Exception float left */
+.float-left{
+	float:left;
+}
+
+/* Exception float right */
+.float-right{
+	float:right;
+}
+
+/* Box to contain option controls */
+.options{
+  display: inline-block;
+  vertical-align: top;
+  background: fff;
+  text-align: left;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 490px;
+  height: 130px;
+  margin: 10px;
+}
+
+/* Basic control styles */
+.control{
+  display: block; 
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Carousel styling */
+
+c {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+c:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+

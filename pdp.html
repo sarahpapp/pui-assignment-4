@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- Head element stores metadata for displaying the page. In this case, I've included a viewport element (to make the page responsive-ready), 
+character encoding element (to make sure that character sets from different languages are rendered correctly by the browser), name and description elements (to comply with SEO best practices), link to favicon, link to Google font (Montserrat), and link to the CSS file. -->
+<head>
+<title>Bun Bun Bakeshop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Bun Bun Bakeshop store website" content="Bun Bun Bakeshop's Carrot Cake Cinnamon Bun is a delicious treat. Place an order today.">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" 
+      type="image/png" 
+      href="favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="main.js" type="text/javascript"></script>
+</head>
+
+<body>
+	
+  <!-- Navbar with working links to homepage, gallery, and about. -->
+  <div class="top-page">
+    <div class="navbar white-background big-padding">
+      <a href="index.html" class="navbar-item button">Bun Bun Bakeshop</a>
+      <div class="float-right hide-small">
+        <a href="visit.html" class="navbar-item button">Visit</a>
+        <a href="online_menu.html" class="navbar-item button">Order Online</a>
+        <a href="cart.html" class="navbar-item button">Cart</a>
+        
+        <div id="cart-container">
+          <div id="cart">
+            <i class="fa fa-shopping-cart fa-2x"></i>
+            <div> 
+                <span id="itemCount"></span> 
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div> 
+  </div>
+	
+	<!-- Header -->
+  <hero>
+    <img class="hero-image" src="images/carrot_header.png" alt="Carrot bun" width="1600" height="430">
+    <div class="display-upper-left medium-padding">
+      <h1>Order today!</h1>
+    </div>
+  </hero>
+
+   <!-- PDP content -->
+  <div class="wrapper">
+
+    <!-- About the product...with image, description, and order button -->
+    <div id="product-package">
+      <div class="special-row big-padding body-margin">
+        <div class="col m6">
+         <img id="product-img" src="images/carrot_pdp.png" class="body-image" alt="Carrot Cake Cinnamon Bun">
+        </div>
+
+        <div class="col m6 big-padding display-right">
+          <h2 id="product-name">Carrot Cake Bun</h2>
+          <p class="large-font">This delicious bun makes for a great treat anytime of day! With Bun Bun Bakeshop's signature frosting, this bun is sure to impress.</p>
+
+          <!-- Dynamic text for description and price-->
+          <p id="description" class="large-font">Just the one bun!</p>
+          <p id="price" class="large-font">$4.99</p>
+
+          <!-- Product options - choosing the box size -->
+          <div>
+            <h5>How many per box?</h5>
+            <div id="individual">
+              <input type="radio" name="boxsize" value="Individual" checked="checked"> Individual<br>
+            </div>
+            <div id="sixpacks">
+              <input type="radio" name="boxsize" value="Six-er (6)"> Six-er (6)<br>
+            </div>
+            <div id="twelvepacks">
+              <input type="radio" name="boxsize" value="Doz-er (12)"> Doz-er (12)<br>
+            </div>
+          </div>
+
+          <!-- Product options - choosing the additional flavors for the 6 or 12 pack -->
+          <div id="packoptions"> 
+              <h5>Pick two additional types of buns!</h5>
+                <select name="qty">
+                  <option value="0">-</option>
+                  <option value="walnut">Walnut Bun</option>
+                  <option value="bacon">Bacon Bun</option>
+                  <option value="original">Original Bun</option>
+                  <option value="vegan">Vegan Bun</option>
+                  <option value="glutenfree">Gluten Free Bun</option>
+                  <option value="blackberry">Blackberry Bun</option>
+                  <option value="apple">Apple Bun</option>
+                  <option value="lavender">Lavender Bun</option>
+                  <option value="birthday">Birthday Cake Bun</option>
+                  <option value="pecan">Pecan Bun</option>
+                  <option value="buttermilk">Buttermilk Bun</option>
+                  <option value="cranberry">Cranberry Bun</option>
+                  <option value="strawberry">Strawberry Bun</option>
+                </select> 
+                <select name="qty">
+                  <option value="0">-</option>
+                  <option value="walnut">Walnut Bun</option>
+                  <option value="bacon">Bacon Bun</option>
+                  <option value="original">Original Bun</option>
+                  <option value="vegan">Vegan Bun</option>
+                  <option value="glutenfree">Gluten Free Bun</option>
+                  <option value="blackberry">Blackberry Bun</option>
+                  <option value="apple">Apple Bun</option>
+                  <option value="lavender">Lavender Bun</option>
+                  <option value="birthday">Birthday Cake Bun</option>
+                  <option value="pecan">Pecan Bun</option>
+                  <option value="buttermilk">Buttermilk Bun</option>
+                  <option value="cranberry">Cranberry Bun</option>
+                  <option value="strawberry">Strawberry Bun</option>
+                </select> 
+          </div>
+
+          <!--Quantity selection -->
+          <div id="qty">
+            <h5>How many boxes?</h5>
+                      <select name="qty">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+          </div>
+
+          <!-- Add to bag button -->
+          <section id="intro">
+            <div id="intro-content" class="center-content">    
+              <div class="center-content-inner">
+                <div class="content-section content-section-margin">
+                  <div class="content-section-grid clearfix">
+                    <a href="#" class="cta-button nav-link">
+                      <div class="cta-bottom"></div>
+                      <div class="cta-top">
+                      <div class="cta-label">Add to Cart</div>
+                        <div class="cta-button-border cta-button-border-left"></div>
+                        <div class="cta-button-border cta-button-border-top"></div>
+                        <div class="cta-button-border cta-button-border-right"></div>
+                        <div class="cta-button-border cta-button-border-bottom"></div>
+                      </div>
+                      </a>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+            </div>
+          </section>
+        </div>
+
+        <!--Carousel (a table with product photos and names) -->
+        <div>
+          <div class="carousel__view">
+            <div class="special-row big-padding">
+              <div class="col m4 ">
+                <p>Check out these other yummy buns.</p>
+                <c id="carousel-prev" href="#" class="previous round">&#8249;</c>
+                <c id="carousel-next" href="#" class="next round float-right">&#8250;</c>
+                <div id="carousel-panel-1">
+
+                    <div class="bun-card col-4">
+                        <img src="images/walnut.jpg" alt="Walnut Bun" class="body-image">
+                        <h3>Walnut Bun</h3>
+                        <h3>$2.99</h3>
+                    </div>
+
+                    <div class="bun-card col-4">
+                        <img src="images/lavender.jpg" alt="Lavender Bun" class="body-image">
+                        <h3>Lavender Bun</h3>
+                        <h3>$4.99</h3>
+                    </div>
+
+                    <div class="bun-card col-4">
+                        <img src="images/apple.jpg" alt="Apple Bun" class="body-image">
+                        <h3>Apple Bun</h3>
+                        <h3>$3.99</h3>
+                    </div>
+
+                    <div class="bun-card col-4">
+                        <img src="images/bacon.jpg" alt="Bacon Bun" class="body-image">
+                        <h3>Bacon Bun</h3>
+                        <h3>$3.99</h3>
+                    </div>
+
+                    <div class="bun-card col-4">
+                      <img src="images/original.jpg" alt="Original Bun" class="body-image">
+                      <h3>Original Bun</h3>
+                      <h3>$2.99</h3>
+                    </div>
+                </div>
+
+                <div id="carousel-panel-2">
+                    <div class="bun-card col-4">
+                      <img src="images/blackberry.jpg" alt="Blackberry Bun" class="body-image">
+                      <h3>Blackberry Bun</h3>
+                      <h3>$4.99</h3>
+                    </div>
+
+                    <div class="bun-card col-4">
+                      <img src="images/buttermilk.jpg" alt="Buttermilk Bun" class="body-image">
+                      <h3>Buttermilk Bun</h3>
+                      <h3>$3.99</h3>
+                    </div>
+
+                    <div class="bun-card col-4">
+                      <img src="images/cranberry.jpg" alt="Cranberry Bun" class="body-image">
+                      <h3>Cranberry Bun</h3>
+                      <h3>$3.99</h3>
+                    </div>
+
+                    <div class="bun-card col-4">
+                      <img src="images/pumpkin.jpg" alt="Pumpkin Bun" class="body-image">
+                      <h3>Pumpkin Bun</h3>
+                      <h3>$5.99</h3>
+                    </div>
+
+                    <div class="bun-card col-4">
+                      <img src="images/strawberry.jpg" alt="Strawnerry Bun" class="body-image">
+                      <h3>Strawberry Bun</h3>
+                      <h3>$4.99</h3>
+                    </div>
+                </div>
+
+            </div>     
+          </div>
+        </div>
+
+    </div>
+  </div>
+  
+   <!-- Footer (with address to the shop) -->
+  <footer class="center light-grey big-padding">
+    <h6>1234 Forbes Ave</h6>
+    <h6>Pittsburgh, PA 15210</h6>
+    <h6>M - F, 7am - 7pm</h6>
+  </footer>
+
+</body>
+</html>

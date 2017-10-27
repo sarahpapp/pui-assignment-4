@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<!-- Head element stores metadata for displaying the page. In this case, I've included a viewport element (to make the page responsive-ready), 
+character encoding element (to make sure that character sets from different languages are rendered correctly by the browser), name and description elements (to comply with SEO best practices), link to favicon, link to Google font (Montserrat), and link to the CSS file. -->
+
+<head>
+<title>Bun Bun Bakeshop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Bun Bun Bakeshop store website" content="This is the website for Bun Bun Bakeshop, Uptown's solution for the carb deprived in Pittsburgh...whether Pittsburgh needs it or not.">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" 
+      type="image/png" 
+      href="favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="main.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+  	  <!-- Navbar with working links to homepage, gallery, and about. -->
+  <div class="top-page">
+    <div class="navbar white-background big-padding">
+      <a href="index.html" class="navbar-item button">Bun Bun Bakeshop</a>
+      <div class="float-right hide-small">
+        <a href="visit.html" class="navbar-item button">Visit</a>
+        <a href="online_menu.html" class="navbar-item button">Order Online</a>
+        <a href="cart.html" class="navbar-item button">Cart</a>
+        
+        <div id="cart-container">
+          <div id="cart">
+            <i class="fa fa-shopping-cart fa-2x"></i>
+            <div> 
+                <span id="itemCount"></span> 
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div> 
+  </div>
+	     
+	<!-- Header -->
+	<hero>
+		<img class="hero-image" src="images/gallery_header.jpg" alt="Baked goods header" width="1600" height="430">
+		<div class="display-upper-left medium-padding">
+		   <h1>Our buns</h1>
+		</div>
+	</hero>
+
+	<!-- Product gallery content --> 
+	</div>
+		<div class="wrapper">	
+		<!-- Gallery -->
+		<div class="special-row big-padding">
+		<div class="col m4 ">
+				  <div class="bun-card col-4">
+				  	<img src="images/walnut.jpg" alt="Walnut Bun" class="body-image">
+				  	<h3>Walnut Bun</h3>
+				  	<h3>$2.99</h3>
+				  </div>
+
+				  <div class="bun-card col-4">
+				  	<a href="pdp.html">
+				  	<img src="images/carrot_gallery.jpg" alt="Carrot Bun" class="body-image">
+				  	<h3>Carrot Cake Bun</h3>
+				  	<h3>$4.99</h3>
+				  	</a>
+				  </div>
+
+				  <div class="bun-card col-4">
+				  	<img src="images/apple.jpg" alt="Apple Bun" class="body-image">
+				  	<h3>Apple Bun</h3>
+				  	<h3>$3.99</h3>
+				  </div>
+
+				  <div class="bun-card col-4">
+				  	<img src="images/bacon.jpg" alt="Bacon Bun" class="body-image">
+				  	<h3>Bacon Bun</h3>
+				  	<h3>$3.99</h3>
+				  </div>
+
+				  <div class="bun-card col-4">
+				  	<img src="images/lavender.jpg" alt="Lavender Bun" class="body-image">
+				  	<h3>Lavender Bun</h3>
+				  	<h3>$4.99</h3>
+				  </div>
+
+				  <div class="bun-card col-4">
+				  	<img src="images/birthdaycake.jpg" alt="Birthday Cake Bun" class="body-image">
+				  	<h3>Birthday Cake Bun</h3>
+				  	<h3>$6.99</h3>
+				  </div>
+
+				  <div class="bun-card col-4">
+				  	<img src="images/original.jpg" alt="Original Bun" class="body-image">
+				  	<h3>Original Bun</h3>
+				  	<h3>$2.99</h3>
+				  </div>
+
+				  <div class="bun-card col-4">
+				  	<img src="images/original_vegan.jpg" alt="Original Vegan Bun" class="body-image">
+				  	<h3>Original Vegan Bun</h3>
+				  	<h3>$3.99</h3>
+				  </div>
+
+				  <div class="bun-card col-4">
+				  	<img src="images/original_g_free.jpg" alt="Original Gluten Free Bun" class="body-image">
+				  	<h3>Original Gluten Free Bun</h3>
+				  	<h3>$3.99</h3>
+				  </div>
+
+				  <div class="bun-card col-4">
+				  	<img src="images/pecan_roll.jpg" alt="Pecan Bun" class="body-image">
+				  	<h3>Pecan Bun</h3>
+				  	<h3>$5.99</h3>
+				  </div>
+
+				  <div class="bun-card col-4">
+				  	<img src="images/blackberry.jpg" alt="Blackberry Bun" class="body-image">
+				  	<h3>Blackberry Bun</h3>
+				  	<h3>$4.99</h3>
+				  </div>
+
+				  <div class="bun-card col-4">
+				  	<img src="images/buttermilk.jpg" alt="Buttermilk Bun" class="body-image">
+				  	<h3>Buttermilk Bun</h3>
+				  	<h3>$3.99</h3>
+				  </div>
+
+				  <div class="bun-card col-4">
+				  	<img src="images/cranberry.jpg" alt="Cranberry Bun" class="body-image">
+				  	<h3>Cranberry Bun</h3>
+				  	<h3>$3.99</h3>
+				  </div>
+
+				  <div class="bun-card col-4">
+				  	<img src="images/pumpkin.jpg" alt="Pumpkin Bun" class="body-image">
+				  	<h3>Pumpkin Bun</h3>
+				  	<h3>$5.99</h3>
+				  </div>
+
+				  <div class="bun-card col-4">
+				  	<img src="images/strawberry.jpg" alt="Strawnerry Bun" class="body-image">
+				  	<h3>Strawberry Bun</h3>
+				  	<h3>$4.99</h3>
+				  </div>
+		        
+		      </div>
+    		</div>
+
+  		</div>
+	</div>
+
+	<!-- Footer (with address to the shop) -->
+	<footer class="center light-grey big-padding">
+		<h6>1234 Forbes Ave</h6>
+		   <h6>Pittsburgh, PA 15210</h6>
+		   <h6>M - F, 7am - 7pm</h6>
+		</footer>
+
+</body>
+</html>
