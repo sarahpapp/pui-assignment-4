@@ -81,20 +81,7 @@ $(document).ready(function() {
 
   });
 
-    /*Cart page - display products in the cart (in the array) and allow product removel via splicing array at an index
 
-    product = JSON.parse(localStorage.getItem("savedProduct"));
-    for (var i = 0; i < product.length; i++){
-      var currentItem = product[i];
-      $("#cart-product").text(currentItem);
-      $("#cart-product").stringify(currentItem);
-    }
-
-    $(document).on("click", ".delete-item", function() {
-    $(this).parent().remove();
-});
-
-  });
   
 
 
